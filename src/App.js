@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Toolbar from './components/Toolbar/Toolbar.js'
+import Carousel from './components/Carousel/Carousel.js'
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return (
+      <div className="App">
+        <Toolbar/>
+        <main style={{paddingTop:'0px'}}>
+          <Carousel/>
+          <h1>This is the page content</h1>
+        </main>
+      </div>
+    );
+  }
 }
+
 
 export default App;
