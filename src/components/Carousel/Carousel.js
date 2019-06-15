@@ -1,29 +1,44 @@
-import React from 'react';
-import $ from 'jquery';
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Carousel.css';
-const carousel = props => (
-    <div className="carousel">
-        <ul className="carousel__slideList">
-           <li className="carousel__slide">
-                <img src="https://via.placeholder.com/2160X1080" ></img>
-            </li> 
-           <li className="carousel__slide">
-                <img src="https://via.placeholder.com/2160X1080" ></img>
-            </li> 
-           <li className="carousel__slide">
-                <img src="https://via.placeholder.com/2160X1080" ></img>
-            </li> 
-        </ul>
+export default () => (
+  <Carousel className="carousel-wrapper" showThumbs={false} infiniteLoop={true} emulateTouch autoPlay>
+    <div>
+      <img className="carousel__img" src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" alt="Missing 1"/>
+      <p className="legend">Legend 1</p>
     </div>
+    <div>
+      <img className="carousel__img" src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg" alt="Missing 2"/>
+      <p className="legend">Legend 2</p>
+    </div>
+    <div>
+      <img className="carousel__img" src="http://lorempixel.com/output/cats-q-c-640-480-3.jpg" alt="Missing 3"/>
+      <p className="legend">Legend 3</p>
+    </div>
+    <div>
+      <img className="carousel__img" src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg" alt="Missing 4"/>
+      <p className="legend">Legend 4</p>
+    </div>
+    <div>
+      <img className="carousel__img" src="http://lorempixel.com/output/cats-q-c-640-480-5.jpg" alt="Missing 5"/>
+      <p className="legend">Legend 5</p>
+    </div>
+    <div>
+      <img className="carousel__img" src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" alt="Missing 6"/>
+      <p className="legend">Legend 6</p>
+    </div>
+    <div>
+      <img className="carousel__img" src="http://lorempixel.com/output/cats-q-c-640-480-7.jpg" alt="Missing 7"/>
+      <p className="legend">Legend 7</p>
+    </div>
+    <div>
+      <img className="carousel__img" src="http://lorempixel.com/output/cats-q-c-640-480-8.jpg" alt="Missing 8"/>
+      <p className="legend">Legend 8</p>
+    </div>
+    <div>
+      <img className="carousel__img" src="http://lorempixel.com/output/cats-q-c-640-480-9.jpg" alt="Missing 9"/>
+      <p className="legend">Legend 9</p>
+    </div>
+  </Carousel>
 );
-    <script>
-        var currentSlide = 1;
-        var $slider = $(".slides");
-        var slideCount = slider.children().length;
-        setInterval(function() {
-            $slider.animate({
-                marginLeft: '-100vw'
-            } , 800 )
-        }, 2000);
-    </script>
-export default carousel;

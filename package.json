@@ -5,7 +5,9 @@
   "dependencies": {
     "jquery": "^3.4.1",
     "react": "^16.8.6",
+    "react-alice-carousel": "^1.14.0",
     "react-dom": "^16.8.6",
+    "react-responsive-carousel": "^3.1.49",
     "react-scripts": "3.0.1"
   },
   "scripts": {

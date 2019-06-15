@@ -6,7 +6,7 @@
 }
 .toolbar__background{
     position: absolute;
-    background-color: #1e1e1e;
+    background-image: linear-gradient(to top, transparent,#1e1e1e,#1e1e1e, #1e1e1e);
     opacity: 0.4;
     width: 100vw;
     height: 100px;
@@ -20,6 +20,7 @@
     height: 100%;
     background: none;
 }
+
     .toolbar__left{
         order: 1;
         
@@ -27,9 +28,25 @@
     .toolbar__logo{
         order:2;
         width: 20vw;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+        .toolbar__logo img{
+            padding-top: 5px;
+            height: 80px;
+            width: auto;
+        }
+    .drawertogglebutton__container{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border: none;
     }
     .toolbar__right{
         order:3;
@@ -48,6 +65,8 @@
             list-style: none;
             width: 100%;
             height: 100%;
+            margin: 0;
+            padding: 0;
         }
             .toolbar__items__list ul{
                 display: flex;
@@ -63,9 +82,7 @@
                 width: 50%;
                 height: 100%;
                 transition: color 1s;
-            }
-            .toolbar__items__list li:hover{
-                background-color: #2e2e2e;
+                outline: none;
             }
                 .toolbar__items__list a{
                     color: white;
@@ -73,14 +90,15 @@
                     text-decoration: none;
                     width: 100%;
                     height: 30px;
-                    align-self: center;
                     align-items: center;
+                    font-weight: bold;
                 }
-                .toolbar__items__list li:hover{
-                    background-color: #2e2e2e;
+
+                .toolbar__tab{
+                    transition: color .4s ease-out;
                 }
                 .toolbar__items__list li:hover .toolbar__tab{
-                    color: orange;
+                    color: #A42035;
                     text-decoration: none;
                 }
 
@@ -89,4 +107,17 @@
 .toolbar__items__list a:active{
     color: cyan;
     text-decoration: none;
+}
+@media ( max-width: 768px ){
+    /*Small screens-only*/
+    .toolbar__items{
+        display: none;
+    }
+
+}
+@media ( min-width: 769px ){
+    /*Big screens-only*/
+    .drawertogglebutton__container{
+        display: none;
+    }
 }
