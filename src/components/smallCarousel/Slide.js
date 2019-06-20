@@ -1,8 +1,8 @@
 import React from 'react';
 import './Slide.css';
-import Project1 from '../../Img/Projects/project1.jpg';
-/*import Project2 from '../../Img/Projects/project2.jpg';
-import Project3 from '../../Img/Projects/project3.jpg';*/
+import Project1 from '../../img/Projects/project1.jpg';
+/*import Project2 from '../../img/Projects/project2.jpg';
+import Project3 from '../../img/Projects/project3.jpg';*/
 class Slide extends React.Component {
     render() {
         return (

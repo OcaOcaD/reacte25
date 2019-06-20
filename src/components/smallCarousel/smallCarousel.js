@@ -3,13 +3,13 @@ import AliceCarousel from 'react-alice-carousel'
 import "react-alice-carousel/lib/alice-carousel.css";
 import './smallCarousel.css';
 
-import Project1 from '../../Img/Projects/project1.jpg';
-import Project2 from '../../Img/Projects/project2.jpg';
-import Project3 from '../../Img/Projects/project3.jpg';
-import Project4 from '../../Img/Projects/project4.jpg';
-import Project5 from '../../Img/Projects/project5.jpg';
-import Project6 from '../../Img/Projects/project6.jpg';
-import Project7 from '../../Img/Projects/project7.jpg';
+import Project1 from '../../img/Projects/project1.jpg';
+import Project2 from '../../img/Projects/project2.jpg';
+import Project3 from '../../img/Projects/project3.jpg';
+import Project4 from '../../img/Projects/project4.jpg';
+import Project5 from '../../img/Projects/project5.jpg';
+import Project6 from '../../img/Projects/project6.jpg';
+import Project7 from '../../img/Projects/project7.jpg';
 export class Gallery extends React.Component {
   constructor(props) {
     super();

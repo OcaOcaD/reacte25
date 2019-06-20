@@ -29,7 +29,7 @@
 }
     .showscreen__img{
         width: 80%;
-        background: url( '../../Img/Projects/project1.jpg' );
+        background: url( '../../img/Projects/project1.jpg' );
         background-size: cover;
         background-position: center; 
         background-repeat: no-repeat;
