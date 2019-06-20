@@ -1,6 +1,6 @@
 import React from 'react';
 import './Toolbar.css';
-import Logo from '../../Img/Basic/logotipo_blanco.png';
+import Logo from '../../img/Basic/logotipo_blanco.png';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton.js';
 
 const toolbar = props => (
