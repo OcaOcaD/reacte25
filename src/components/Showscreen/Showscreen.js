@@ -1,18 +1,8 @@
 import React from 'react';
 import './Showscreen.css';
 import '../smallCarousel/smallCarousel'
-import SmallCarousel from '../smallCarousel/smallCarousel';
-class Showscreen extends React.Component {
-    constructor(){
-        super();
-        this.state = ({
-            desc: intialDesc
-        });
-    }
 
-    onChangeLink() {
-        this.props.changeDesc(this.state.desc);
-    }
+class Showscreen extends React.Component {
     render() {
         return (
             <div className="showscreen">
@@ -24,12 +14,10 @@ class Showscreen extends React.Component {
 
                     </div>
                     <div className="showscreen__description">
-                        <p>{this.state.desc}</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi distinctio quas itaque nobis vero libero ducimus iure nesciunt doloremque quaerat, laboriosam perferendis molestias, atque non molestiae eum saepe ipsa! Soluta?</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, ipsam. Labore laudantium cumque quia ut, doloremque provident assumenda quidem officia odio porro corrupti praesentium magnam eligendi delectus quisquam vitae dicta.</p>
+                        
                     </div>
-                </div>
-                <div className="showscreen__smallCarousel">
-                    <SmallCarousel />
                 </div>
             </div>
         )

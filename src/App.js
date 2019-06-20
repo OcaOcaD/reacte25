@@ -5,6 +5,7 @@ import Backdrop from './components/Backdrop/Backdrop';
 import Carousel from './components/Carousel/Carousel'
 import CardList from './components/CardList/Cardlist';
 import Showscreen from './components/Showscreen/Showscreen';
+import SmallCarousel from './components/smallCarousel/smallCarousel';
 import './App.css';
 /*This is the array that contains the card info. Just a preview*/
 let cards = [
@@ -17,12 +18,12 @@ let cards = [
   id:2,
   tit: 'Secando taitalus',
   desc: 'Descriptao for da bildingao dat jasenti\'ba bilut ieto',
-  img: 'Project1'
+  img: 'Project2'
   },  {
   id:3,
   tit: 'Nose jaja, algo',
   desc: 'Sikesi ahre. sí jalo jaja. Aila vato loco',
-  img: 'Project1'
+  img: 'Project3'
   }
 ];
 class App extends Component {
@@ -30,7 +31,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      screenDesc:"DONEM IPSUM"
+      screenDesc:"FIRST DESCRIPTION"
     }
   }
   onChangeDesc ( nuDesc ) {
@@ -71,8 +72,10 @@ class App extends Component {
           <br/><br/><br/><br/><br/><br/>
           <Showscreen 
             intialDesc={this.state.screenDesc}
-            changeDesc = {onChangeDesc.bind(this)}
           />
+            <SmallCarousel 
+              changeDesc = {this.onChangeDesc.bind(this)}
+            />
           <h1>This is the page content</h1>
         </main>
       </div>
