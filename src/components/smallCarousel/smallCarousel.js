@@ -97,7 +97,8 @@ export class Gallery extends React.Component {
             </div>
           </div>
         </AliceCarousel>
-        <button onClick={this.onChangeDesc.bind(this)} >Change desc</button>
+
+    {/*<button onClick={this.onChangeDesc.bind(this)} >Change desc</button>*/}
       </div>
     );
 

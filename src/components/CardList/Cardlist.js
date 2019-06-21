@@ -13,7 +13,7 @@ class CardList extends React.Component{
                 <div className="cards__rectangle">
                     <ul className="cardList">
                         {this.props.cards.map( (card) =>{
-                            return <Card card={card}/>
+                            return <Card key={ card.id } card={card}/>
                         } )
                     }
                     </ul>

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'HoneywellSans';
+    font-style: normal;
+    font-weight: bold;
+    src:
+      local('../public/fonts/HoneywellSans-Bold.otf'),
+      local('TPHero-Bold'),
+      url(../public/fonts/HoneywellSans-Bold.otf) format('opentype');
+  }
+  @font-face {
+    font-family: 'HoneywellSans';
+    font-style: medium;
+    font-weight: normal;
+    src:
+      local('../public/fonts/HoneywellSans-Medium.otf'),
+      local('TPHero-Bold'),
+      url(../public/fonts/HoneywellSans-Medium.otf) format('opentype');
+  }
+  @font-face {
+    font-family: 'HoneywellSans';
+    font-style: normal;
+    font-weight: light;
+    src:
+      local('../public/fonts/HoneywellSans-Light.otf'),
+      local('TPHero-Light'),
+      url(../public/fonts/HoneywellSans-Light.otf) format('opentype');
+  }

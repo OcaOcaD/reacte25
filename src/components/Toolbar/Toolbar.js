@@ -13,7 +13,7 @@ const toolbar = props => (
             <div className="toolbar__items toolbar__left">
                 <ul className="toolbar__items__list" >
                     <li><a className="toolbar__tab" href="/">ESTANCIA 25</a></li>
-                    <li><a className="toolbar__tab" href="/">PROYECTOS PÚBLICOS</a></li>
+                    <li> <a className="toolbar__tab" href="/">PROYECTOS PÚBLICOS</a></li>
                 </ul>
             </div>
             <div className="toolbar__logo">

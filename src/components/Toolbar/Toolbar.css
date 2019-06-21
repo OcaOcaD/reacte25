@@ -35,8 +35,9 @@
     }
         .toolbar__logo img{
             padding-top: 5px;
-            height: 80px;
+            height: 100px;
             width: auto;
+            padding-top: 2em; 
         }
     .drawertogglebutton__container{
         position: fixed;

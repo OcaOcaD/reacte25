@@ -4,6 +4,7 @@
     top: 0;
     padding: 0;
     margin: 0;
+    margin-bottom: 40px;
 }
 .side-drawer__container{
     height: 100vh;
@@ -17,4 +18,14 @@
     top: 0;
     padding: 0;
     margin: 0;
+}
+.small__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1d1d1b;
+}
+a, label, p, h1, h2, h3, legend, button, form{
+    font-family: 'HoneywellSans', sans-serif;
+    font-weight: Medium;
 }

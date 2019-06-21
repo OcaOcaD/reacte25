@@ -1,8 +1,10 @@
 import React from 'react';
 import './Card.css';
 import Project1 from '../../img/Projects/project1.jpg';
-/*import Project2 from '../../img/Projects/project2.jpg';
-import Project3 from '../../img/Projects/project3.jpg';*/
+/*
+import Project2 from '../../img/Projects/project2.jpg';
+import Project3 from '../../img/Projects/project3.jpg';
+*/
 class Card extends React.Component {
     render() {
         return (
